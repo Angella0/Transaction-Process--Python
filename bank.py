@@ -1,4 +1,4 @@
-from datetime import date, datetime, time
+from datetime import datetime
 class Account:
     def __init__(self,name,phone_number):
         self.name = name
@@ -51,8 +51,8 @@ class Account:
             narration = transaction["Narration"]
             time = transaction["time"]
             date = time.strftime("%d/%m/%y")
-            print(f"{date} {narration} {amount}")
-            return self.statement
+            print(f"{date}: {narration} {amount}")
+            return 
     
 
     
