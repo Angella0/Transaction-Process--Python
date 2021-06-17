@@ -18,8 +18,9 @@ divisible_by_three()
 
 def nested_list():
      x = [[1,2],[3,4],[5,6]]
-     for a in x:
-         print(a)
+     y =[[1,2]+[3,4]+[5,6]]
+     print(y)
+         
 
 nested_list()
 
